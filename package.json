@@ -27,6 +27,7 @@
     "dev": "npm run dev -ws",
     "build": "npm run compile -ws",
     "build:extra": "tsc --build",
+    "prepare": "npm run build",
     "version": "npm run build",
     "prepublishOnly": "npm run build",
     "test": "jest --reporters=default",
