@@ -31,7 +31,10 @@
     "clean": "rimraf dist",
     "lint": "ts-standard --verbose | snazzy",
     "lint:fix": "ts-standard --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release": "standard-version",
+    "prerelease": "standard-version -- --prerelease",
+    "fix": "standard-version -- --release-as minor"
   },
   "keywords": [
     "standard"
@@ -62,6 +65,7 @@
     "rimraf": "^3.0.2",
     "simple-git-hooks": "^2.8.0",
     "snazzy": "^9.0.0",
+    "standard-version": "^9.5.0",
     "ts-jest": "^28.0.7",
     "ts-node": "^10.9.1",
     "ts-standard": "^11.0.0",
