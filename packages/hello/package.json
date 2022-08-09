@@ -1,0 +1,23 @@
+{
+  "name": "@stephen-shopopop/hello",
+  "version": "0.0.2",
+  "types": "dist/index.d.ts",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "npx ts-node index.ts",
+    "compile": "rm -rf dist/* && tsc -p tsconfig.pkg.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephen-shopopop/stephen-shopopop.git"
+  },
+  "keywords": [],
+  "author": "tech-shopopop <tech@shopopop.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephen-shopopop/stephen-shopopop/issues"
+  },
+  "homepage": "https://github.com/stephen-shopopop/stephen-shopopop#readme"
+}

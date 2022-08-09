@@ -1,8 +1,3 @@
-<p align="center">
-    <img src="./shopopop.png"
-        height="130">
-</p>
-
 [![Minimal node version](https://img.shields.io/static/v1?label=node&message=%3E=16.15&logo=node.js&color)](https://nodejs.org/about/releases/)
 [![Minimal npm version](https://img.shields.io/static/v1?label=npm&message=%3E=8.5.5&logo=npm&color)](https://github.com/npm/cli/releases)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/stephen-shopopop/node-ts/graphs/commit-activity)
@@ -35,12 +30,17 @@ Publish all package (optionnal):
 npm publish --workspaces --access public
 ```
 
-1. npm run test -  Run tests.
-2. npm run build - Build each packages
-3. npm run build:extra  - Build each package in dist isolate
-4. npm run lint - Run lint
-5. npm run lint:fix - Run lint autofix
-6. npm run typecheck - Run typecheck
+1. npm run start -  Run all packages.
+2. npm run dev - Run all packages with ts-node
+3. npm run test -  Run tests.
+4. npm run build - Build each packages
+5. npm run build:extra  - Build each package in dist isolate
+6. npm run lint - Run lint
+7. npm run lint:fix - Run lint autofix
+8. npm run typecheck - Run typecheck
+9. npm run release - Tag release
+10. npm run prerelease - Tag pre release
+11. npm run fix - Tag fix 
 
 ## Production
 
