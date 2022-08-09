@@ -14,8 +14,8 @@ Template nodejs typescript on workspace
 ## Contributing
 
 1. npm run start -  Start project
-2. npm run dev - Start project in dev
-3. npm run compile - Build js
+2. npm run dev - Start project with ts-node (dev only)
+3. npm run compile - Build ts
 
 ## Production
 

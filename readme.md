@@ -18,10 +18,34 @@ Template nodejs typescript with ts-standard
 
 ## Contributing
 
+Run package project:
+
+```shell
+npm run start -w=@stephen-shopopop/hello
+
+// or run with ts-node
+npm run dev -w=@stephen-shopopop/hello
+```
+
 Add package in workspace:
 
 ```shell
 npm init --scope=@stephen-shopopop -y -w ./packages/hello
+```
+
+Add dependencies in package:
+
+```shell
+npm install abbrev -w @stephen-shopopop/hello
+
+// uninstall
+npm uninstall abbrev -w @stephen-shopopop/hello
+```
+
+Run test only in package:
+
+```shell
+npm test --packages/hello
 ```
 
 Publish all package (optionnal):
@@ -30,17 +54,25 @@ Publish all package (optionnal):
 npm publish --workspaces --access public
 ```
 
-1. npm run start -  Run all packages.
-2. npm run dev - Run all packages with ts-node
-3. npm run test -  Run tests.
-4. npm run build - Build each packages
-5. npm run build:extra  - Build each package in dist isolate
-6. npm run lint - Run lint
-7. npm run lint:fix - Run lint autofix
-8. npm run typecheck - Run typecheck
-9. npm run release - Tag release
-10. npm run prerelease - Tag pre release
-11. npm run fix - Tag fix 
+Extra:
+
+```shell
+// Start all projets
+npm run start -ws
+
+// Start all projets in dev mode
+npm run dev -ws
+```
+
+1. npm run test -  Run tests.
+2. npm run build - Build each packages
+3. npm run build:extra  - Build each package in dist isolate
+4. npm run lint - Run lint
+5. npm run lint:fix - Run lint autofix
+6. npm run typecheck - Run typecheck
+7. npm run release - Tag release
+8. npm run prerelease - Tag pre release
+9. npm run fix - Tag fix
 
 ## Production
 

@@ -23,8 +23,6 @@
     "stephen.deletang@shopopop.com"
   ],
   "scripts": {
-    "start": "npm run start -ws",
-    "dev": "npm run dev -ws",
     "build": "npm run compile -ws",
     "build:extra": "tsc --build",
     "prepare": "npm run build",
