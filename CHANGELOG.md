@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com///compare/v1.2.1...v1.3.0) (2022-08-09)
+
+
+### Features
+
+* **bundle:** ADD vscode extension, ADD tsconfig best config for build ([65363e5](https://github.com///commit/65363e5573876010e865ff08a80d88b4acb150b4))
+
+
+### Bug Fixes
+
+* FIX github actions ([0eed91a](https://github.com///commit/0eed91a346be5543b42be9ef3cd5f8935f85b864))
+* FIX github workflow ([4d18019](https://github.com///commit/4d180197cbb4b8cffe456ce798e5559bfa323351))
+* FIX npm i github actios ([2254a97](https://github.com///commit/2254a97cb94d4d8dbcee2efd543b70a836d83fdf))
+* FIX package lock ([85b205b](https://github.com///commit/85b205b59a004b6443935c9c1333488f8f3252d9))
+* FIX package lock ([addad26](https://github.com///commit/addad26cb5df94870e7d4cb54e513404b110e89d))
+
 ### [1.2.1](https://github.com///compare/v1.2.0...v1.2.1) (2022-08-09)
 
 ## 1.2.0 (2022-08-09)
