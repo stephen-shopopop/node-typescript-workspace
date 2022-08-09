@@ -1,6 +1,6 @@
 {
   "name": "node-typescript-workspace",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "workspace typescript nodejs with ts-standard",
   "private": true,
   "engines": {
