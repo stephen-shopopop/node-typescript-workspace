@@ -6,5 +6,9 @@
     "javascript",
     "typescript"
   ],
-  "standard.engine": "ts-standard"
+  "standard.engine": "ts-standard",
+  "editor.codeActionsOnSave": {
+    "source.sortMembers": true,
+    "source.sortImports": true
+  }
 }
