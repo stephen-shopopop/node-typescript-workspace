@@ -1,7 +1,5 @@
 # Workspace ignore
 packages/*/dist
-node_modules
-dist
 
 # Artifact files
 dist/
