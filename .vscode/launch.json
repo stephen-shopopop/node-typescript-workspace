@@ -12,7 +12,7 @@
         "--inspect-brk"
       ],
       "args": [
-          "${workspaceFolder}/src/index.ts"
+          "${workspaceFolder}/packages/hello/index.ts"
       ],
       "attachSimplePort": 9229,
       "console": "integratedTerminal"
