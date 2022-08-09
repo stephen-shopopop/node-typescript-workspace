@@ -89,5 +89,8 @@ npm i --production
 A modern cli tool that keeps your deps fresh
 
 ```bash
-npx taze
+npx taze -r
+
+// major
+npx taze major -r
 ```
