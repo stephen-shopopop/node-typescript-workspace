@@ -48,6 +48,20 @@ Run test only in package:
 npm test --packages/hello
 ```
 
+Add reference package (npm recommended):
+
+```shell
+npm i ./packages/hello -w packages/mypackage
+```
+
+Add reference package (better reference):
+
+```json
+"dependencies": {
+  "@stephen-shopopop/hello": "*"
+}
+```
+
 Publish all package (optionnal):
 
 ```shell
