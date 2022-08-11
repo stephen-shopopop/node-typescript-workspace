@@ -46,7 +46,7 @@ release: ## Make a release (git tag)
 git-hooks: ## Install git hooks
 	make run CMD="npx simple-git-hooks"
 
-gen: # Generate packages child
+gen: ## Generate packages child
 	make run CMD="node generate.js"
 
 nvm: ## Install nvm: restart your terminal after nvm install
