@@ -17,13 +17,12 @@ help:
 run: ## NPM install
 	. $(NVM_DIR)/nvm.sh && nvm use $(NODE) && $(CMD)
 
-all: 
-	make install
-	make run CMD="npm install"
+all: ## Run build, lint, typecheck and test for all packages
+	make build lint typecheck test
 
 install: ## Install node version
 	. $(NVM_DIR)/nvm.sh && nvm install $(NODE)
-	make run CMD="npm i"
+	make run CMD="npm install"
 
 build: ## Compile typescript
 	make run CMD="npm run build"
