@@ -62,6 +62,12 @@ Add reference package (better reference):
 }
 ```
 
+Version [npm version](https://docs.npmjs.com/cli/v7/commands/npm-version):
+
+```shell
+npm version minor -w @stephen-shopopop/hello
+```
+
 Publish all package (optionnal):
 
 ```shell
