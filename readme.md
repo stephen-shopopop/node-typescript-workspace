@@ -71,10 +71,10 @@ npm publish --workspaces --access public
 Extra:
 
 ```shell
-// Start all projets
+// Start all projets on queueing
 npm run start -ws
 
-// Start all projets in dev mode
+// Start all projets on queueing in dev mode
 npm run dev -ws
 ```
 
