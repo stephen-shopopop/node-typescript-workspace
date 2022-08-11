@@ -4,6 +4,7 @@ const { execSync } = require('child_process')
 const readline = require('readline')
 const util = require('util')
 const fs = require('fs-extra')
+const packageJson = require('./package.json')
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -52,18 +53,17 @@ async function main () {
   }, { spaces: 2 })
 
   // Generate readme.md
-  await fs.outputFile(`./packages/${packageName}/readme.md`, `[![Minimal node version](https://img.shields.io/static/v1?label=node&message=%3E=16.15&logo=node.js&color)](https://nodejs.org/about/releases/)
-[![Minimal npm version](https://img.shields.io/static/v1?label=npm&message=%3E=8.5.5&logo=npm&color)](https://github.com/npm/cli/releases)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/stephen-shopopop/node-ts/graphs/commit-activity)
+  await fs.outputFile(`./packages/${packageName}/readme.md`, `[![Minimal node version](https://img.shields.io/static/v1?label=node&message=${packageJson.engines.node}&logo=node.js&color)](https://nodejs.org/about/releases/)
+[![Minimal npm version](https://img.shields.io/static/v1?label=npm&message=${packageJson.engines.npm}&logo=npm&color)](https://github.com/npm/cli/releases)
 [![Linux](https://svgshare.com/i/Zhy.svg)](https://svgshare.com/i/Zhy.svg)
 [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
 
-# NODE typescript template
+# nodejs typescript template
 
 ## Description
 
-Template nodejs typescript on workspace
+Template nodejs typescript
 
 ## Contributing
 
