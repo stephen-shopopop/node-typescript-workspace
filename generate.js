@@ -33,7 +33,7 @@ async function main () {
 
   // Generate npmignore
   await fs.outputFile(`./packages/${packageName}/.npmignore`, `*
-!dist/*
+!dist/**
 !package.json
 !readme.md
 `)

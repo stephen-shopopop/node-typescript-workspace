@@ -3,7 +3,7 @@ PROJECT ?= $(shell node -p "require('./package.json').name")
 NVM = v0.38.0
 NODE ?= $(shell cat $(PWD)/.nvmrc 2> /dev/null || echo v16.15.0)
 
-.PHONY: help all build install nvm test lint lint-autofix typecheck release git-hooks gen
+.PHONY: help all build install nvm test lint lint-autofix typecheck release git-hooks gen tags task
 
 default: help
 
@@ -33,14 +33,8 @@ test: ## Run tests
 lint: ## Run linter
 	make run CMD="npm run lint"
 
-lint-autofix: ## Run linter autofix
-	make run CMD="npm run lint:fix"
-
 typecheck: ## Run typecheck
 	make run CMD="npm run typecheck"
-
-release: ## Make a release (git tag)
-	make run CMD="npm run release"
 
 git-hooks: ## Install git hooks
 	make run CMD="npx simple-git-hooks"
@@ -48,5 +42,14 @@ git-hooks: ## Install git hooks
 gen: ## Generate packages child
 	make run CMD="node generate.js"
 
+## Tasks
+## ex: make task lint
+task: ## Run task
+	make run CMD="npm run $(filter-out $@,$(MAKECMDGOALS))"
+
 nvm: ## Install nvm: restart your terminal after nvm install
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/${NVM}/install.sh | bash
+
+tags: # Npm version with push
+	make run CMD="npm version $(filter-out $@,$(MAKECMDGOALS))"
+	git push --follow-tags
