@@ -90,9 +90,6 @@ npm run dev -ws
 4. npm run lint - Run lint
 5. npm run lint:fix - Run lint autofix
 6. npm run typecheck - Run typecheck
-7. npm run release - Tag release
-8. npm run prerelease - Tag pre release
-9. npm run fix - Tag fix
 
 ## Production
 
